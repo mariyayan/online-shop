@@ -1,0 +1,10 @@
+#search-container .product-card{
+	margin: 0 80px 80px 0;
+	}
+
+@media screen and (max-width: 479px) {
+
+    #search-container .product-card {
+        margin: 0 0 60px 0;
+    }
+}

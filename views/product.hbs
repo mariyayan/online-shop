@@ -1,0 +1,49 @@
+ {{>menu menuData=menuData showUserNavMenu=showUserNavMenu}}
+<article id={{product._id}} class='wrapper flex product-full-info'>
+    <div class='product-img-container'><img src='/{{product.src}}'></div>
+    <div class='flex product-info'>
+        <div class='product-info-data'>
+            <h3 class='product-info-title'>{{product.name}}</h3>
+            <p class='pink-text'>{{product.price}} $</p>
+            <p class='product-info-presence'><span class='fa fa-check icon' aria-hidden='true'></span><span>в наличии, {{product.quantity}}</span></p>
+            <p class='product-info-description'>{{product.description}} </p>
+            <p class='product-quantity'><span class='fas fa-chevron-down quantity-arrow quantity-down'></span></span><input type='number' class='quantity-input' readonly="" value='1' max={{product.quantity}} min='1'><span class='fas fa-chevron-up quantity-arrow quantity-up'></span></p></span>
+            <div class='product-info-btns'>
+            
+                    <button id = '/addToCart/{{product._id}}' class='add-to-cart-btn icon-hover transition-bg-color clickable'> 
+                        <span class='fa fa-shopping-cart shopping-cart'> <span>Add to cart</span>
+                        <span class='hint transition-visibility'>Add to cart</span>
+                    </button>
+                    
+                    
+                
+                <button id = '/addToWishlist/{{product._id}}'  class='add-to-wishlist-btn icon-hover transition-bg-color clickable'>
+                        <span class='fa fa-heart-o'></span>
+                    <span class='hint transition-visibility'>Add to wishlist</span>
+                </button>
+
+            </div>
+        </div>
+        <div class='product-info-data'>
+            <div class='details containing-block'>
+                <div class='summary arrow-container'>
+                    <p><span>Delivery</span><span class='fas fa-angle-down arrow-down transition-transform'></span></p>
+                </div>
+                <ul class='nested-block transition-opacity'>
+                    <li class='summary-info'>Lorem ipsum dolor sit amet, consectetur adipiscing elit , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li class='summary-info'>Lorem ipsum dolor sit amet, consectetur adipiscing elit , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li class='summary-info'>Lorem ipsum dolor sit amet, consectetur adipiscing elit , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                </ul>
+            </div>
+            <div class='details containing-block'>
+                <div class='summary arrow-container'>
+                    <p><span>Payment</span><span class='fas fa-angle-down arrow-down transition-transform'></span></p>
+                </div>
+                <ul class='nested-block transition-opacity'>
+                    <li class='summary-info'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                    <li class='summary-info'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>

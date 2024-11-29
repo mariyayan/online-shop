@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+span {
+    font-family: fontawesome !important;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    padding: 150px 0;
+}
+
+.container-wrapper {
+    padding: 150px 0;
+}
+
+.block {
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cards-block-container {
+    border: solid black 1px;
+    padding: 25px;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 40px auto 0 auto;
+    justify-content: center;
+}
+
+.containing-block {
+    position: relative;
+}
+
+.nested-block {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.pink-text {
+    color: rgb(255, 213, 216);
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.icon-hover {
+    border: none;
+    padding: 9px 10px;
+    text-align: center;
+    position: relative;
+    background-color: white;
+}
+
+.icon-hover:hover,
+.switch-btn-active,
+.switch-btn:hover,
+.user-nav-menu-form-block:nth-of-type(2):hover {
+    background-color: rgb(255, 174, 201);
+    color: white;
+}
+
+.transition-opacity {
+    transition: opacity linear 300ms;
+}
+
+.transition-transform {
+    transition: transform linear 300ms;
+}
+
+.transition-color {
+    transition: color linear 300ms;
+}
+
+.transition-bg-color,
+.nav-btn-active {
+    transition: background-color linear 300ms;
+}
+
+.transition-visibility {
+    transition: visibility linear 300ms;
+}
+
+.transition-color-bg-color,
+.btn,
+.switch-btn-active {
+    transition: background-color 300ms linear, color 300ms linear;
+}
+
+.arrow-down {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.slider {
+    position: relative;
+}
+
+.switch-btns {
+    width: 30%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.switch-btn {
+    cursor: pointer;
+    padding: 7px 10px;
+    color: rgb(255, 174, 201);
+}
+
+.switch-btns .nav-btn-active {
+    color: white;
+}
+
+.slider-arrows,
+.nav-btns-slider {
+    position: absolute;
+}
+
+.left-btn:hover,
+.right-btn:hover,
+.cross:hover,
+.btn:hover {
+    cursor: pointer;
+}
+
+.text-active {
+    transform: translateY(-200px);
+}
+
+.turn-arrow-up {
+    transform: rotate(-180deg);
+}
+
+.nav-btn-active {
+    background-color: rgb(255, 174, 201) !important;
+}
+
+.btn {
+    width: 120px;
+    color: white;
+    background-color: rgb(255, 174, 201);
+    padding: 10px 3px;
+    font-size: 17px;
+    border: solid transparent 1px;
+    border-radius: 10px;
+}
+
+
+.btn:hover {
+    color: rgb(255, 174, 201);
+    background-color: white;
+    border: solid rgb(154, 154, 154) 1px;
+}
+
+.show-element {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.add-visibility {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.fixed-position {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+.window {
+    background-color: rgba(255, 255, 255, 0.5);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.window-content {
+    background-color: white;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 800px;
+    height: 450px;
+    padding: 25px;
+    border: solid rgb(181, 179, 179) 1px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.window-form-fieldset {
+    padding: 50px;
+}
+
+#message-window .window-content {
+    height: 150px;
+    width: 90%;
+}
+
+.cross {
+    position: absolute;
+    background-color: white;
+    border: solid rgb(198, 198, 198) 1px;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 35px;
+    top: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.form-errors {
+    padding: 10px 0 30px 0;
+    position: relative;
+    visibility: hidden;
+    text-align: center;
+}
+
+.open {
+    visibility: visible !important;
+}
+
+.add-height {
+    height: auto !important;
+}
+
+.add-opacity {
+    opacity: 1 !important;
+}
+
+.hide-element {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    padding: 0 !important;
+}
+
+
+@media screen and (max-width: 1023px) {
+
+    .container-wrapper {
+        padding: 100px 0;
+    }
+
+    .window-content {
+        width: 80%;
+    }
+
+    .switch-btns {
+        width: 30%;
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    .container-wrapper {
+        padding: 70px 0;
+    }
+
+    .switch-btns {
+        width: 45%;
+    }
+
+    .window-content {
+        width: 96%;
+    }
+
+    .text-active {
+        transform: translateY(-150px);
+    }
+}
+
+
+@media screen and (max-width: 479px) {
+    .window-content {
+        width: 300px;
+        height: 550px;
+    }
+
+    .window-form label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .switch-btns {
+        width: 80%;
+    }
+}

@@ -1,0 +1,45 @@
+.carousel-wrapper {
+    width: calc(280px * 3);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-slider .slides-wrapper {
+    width: max-content;
+    padding-top: 60px;
+}
+
+.carousel-slider .arrow {
+    padding: 12px 17px;
+    margin-right: 20px;
+    color: rgb(198, 198, 198);
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.22);
+    background-color: white;
+    cursor: pointer;
+}
+
+.carousel-slider .slider-arrows {
+    z-index: 3;
+    right: 0;
+}
+
+.slides-wrapper .product-card {
+    height: 300px;
+    margin-right: 80px;
+    padding: 20px 0 30px 0;
+}
+
+@media screen and (max-width: 1023px) {
+
+    .carousel-wrapper {
+        padding: 170px 0;
+        width: calc(280px * 2);
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .carousel-wrapper {
+        width: 200px;
+    }
+}

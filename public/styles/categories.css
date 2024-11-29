@@ -1,0 +1,33 @@
+#categories {
+    padding: 100px 0;
+}
+
+#categories .carousel-wrapper {
+    padding: 110px 0;
+}
+
+#categories .slider {
+    height: 300px;
+}
+
+#categories .slides-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media screen and (max-width: 1023px) {
+
+    #categories .carousel-wrapper {
+        padding: 110px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    #categories .carousel-wrapper {
+        padding: 120px 0;
+    }
+}

@@ -1,0 +1,68 @@
+.empty {
+    margin-left: 90px;
+}
+
+.card {
+    width: 70%;
+    margin: 0 auto 60px;
+    padding: 15px;
+    border: solid black 1px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .flex {
+    justify-content: space-between;
+    width: 60%;
+    align-items: center;
+}
+
+.card-img-container {
+    width: 150px;
+    height: 100px;
+}
+
+.card-data {
+    width: 40%;
+}
+
+.card-btn {
+    width: 20%
+}
+
+.card-title {
+    font-size: 17px;
+}
+
+.card .pink-text {
+    margin: 10px 7px;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card .btn {
+    padding: 10px 15px;
+}
+
+@media screen and (max-width: 767px) {
+
+
+    .card .flex {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card {
+        width: 95%;
+        padding: 35px 15px;
+        text-align: center;
+    }
+
+    .card-data,
+    .card-btn {
+        width: 100%;
+        margin-top: 30px;
+    }
+}

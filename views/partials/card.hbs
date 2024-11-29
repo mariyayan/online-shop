@@ -1,0 +1,11 @@
+<article id={{product._id}} class='flex card'>
+    <a href='/product/{{product._id}}' class='flex'>
+        <div class='card-img-container'><img src='/{{product.src}}'></div>
+        <div class='card-data'>
+            <h6 class='card-title'>{{product.name}}</h6>
+            <p class='pink-text'>{{product.price}} </p>
+            <p>{{product.description}}</p>
+        </div>
+    </a>
+    <div class='card-btn'> <span id='/{{route}}/{{product._id}}' class='btn clickable'>Remove</span></div>
+</article>

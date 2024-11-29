@@ -1,0 +1,98 @@
+{{>menu menuData=menuData showUserNavMenu=showUserNavMenu}}
+<main>
+    <div id='main-slider' class='slider regular-slider'>
+        <div class='slides-wrapper flex'>
+            <div class='slide'>
+                <img src='/img/50.jpeg'>
+                <div class='slider-text text-active'>
+                    <p class='slide-text-content'>1 Lorem ipsum</p>
+                    <button class='btn'>Click</button>
+                </div>
+            </div>
+            <div class='slide'>
+                <img src='/img/47.jpg''>
+                <div class='slider-text'>
+                    <p class='slide-text-content'>2 Lorem ipsum</p>
+                    <button class='btn'>Click</button>
+                </div>
+            </div>
+            <div class='slide'>
+                <img src='/img/48.jpg''>
+                <div class='slider-text'>
+                    <p class='slide-text-content'>3 Lorem ipsum</p>
+                    <button class='btn'>Click</button>
+                </div>
+            </div>
+            <div class='slide'>
+                <img src='/img/49.jpg''>
+                <div class='slider-text'>
+                    <p class='slide-text-content'>4 Lorem ipsum</p>
+                    <button class='btn'>Click</button>
+                </div>
+            </div>
+        </div>
+        <div class='flex slider-arrows regular-slider-arrows'>
+            <div class='left-btn regular-slider-arrow'><span class='fas fa-chevron-left'></span></div>
+            <div class='right-btn regular-slider-arrow'><span class='fas fa-chevron-right'></span></div>
+        </div>
+        <div class='flex nav-btns-slider'>
+            <div class='slider-nav-btn nav-btn-active'></div>
+            <div class='slider-nav-btn'></div>
+            <div class='slider-nav-btn'></div>
+            <div class='slider-nav-btn'></div>
+        </div>
+    </div>
+    {{>carousel productsData = menuData.popular carouselId = 'popular-carousel' switchBtns = false subCategoriesArr = false}}
+    <section id='testimonials-wrapper' class='container-wrapper'>
+        <p id='testimonials-title'>They say</p>
+        <h2>TESTIMONIALS</h2>
+        <div id='testimonials' class='slider regular-slider'>
+            <div class='slides-wrapper flex'>
+                <article class='slide testimonial-slide'>
+                  <div class='quote-container'>  <span class='fas fa-quote-left quote'></span></div>
+                    <p class='testimonial-text'>1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <p class='testimonial-name'>LOREM IPSUM</p>
+                  <div class='quote-container'>  <span class='fas fa-quote-right quote'></span></div>
+                </article>
+                <article class='slide testimonial-slide'>
+                    <div class='quote-container'><span class='fas fa-quote-left quote'></span></div>
+                    <p class='testimonial-text'>
+                        2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p class='testimonial-name'>LOREM IPSUM</p>
+                   <div class='quote-container'> <span class='fas fa-quote-right quote'></span></div>
+                </article>
+                <article class='slide testimonial-slide'>
+                    <div class='quote-container'><span class='fas fa-quote-left quote'></span></div>
+                    <p class='testimonial-text'>
+                        3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p class='testimonial-name'>LOREM IPSUM</p>
+                   <div class='quote-container'> <span class='fas fa-quote-right quote'></span></div>
+                </article>
+                <article class='slide testimonial-slide'>
+                   <div class='quote-container'> <span class='fas fa-quote-left quote'></span></div>
+                    <p class='testimonial-text'>
+                        4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p class='testimonial-name'>LOREM IPSUM</p>
+                    <div class='quote-container'><span class='fas fa-quote-right quote'></span></div>
+                </article>
+            </div>
+            <div class='flex slider-arrows regular-slider-arrows'>
+                <div class='left-btn regular-slider-arrow'><span class="fa-solid fa-arrow-left arrow"></span></div>
+                <div class='right-btn regular-slider-arrow'> <span class="fa-solid fa-arrow-right arrow"></span></div>
+            </div>
+            <div class='flex nav-btns-slider'>
+                <div class='slider-nav-btn nav-btn-active'></div>
+                <div class='slider-nav-btn'></div>
+                <div class='slider-nav-btn'></div>
+                <div class='slider-nav-btn'></div>
+            </div>
+        </div>
+    </section>
+</main>

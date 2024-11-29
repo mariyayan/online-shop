@@ -1,0 +1,142 @@
+.product-full-info {
+    width: 95%;
+    margin: 150px auto;
+    justify-content: space-between;
+    border: solid rgb(255, 213, 216) 1px;
+    padding: 80px 40px;
+}
+
+.product-full-info .nested-block {
+    height: 0;
+}
+
+.product-full-info .containing-block .show-element {
+    height: auto;
+}
+
+.product-img-container {
+    width: 350px;
+    height: 350px;
+    border: solid black 1px;
+    margin-right: 40px;
+}
+
+.product-info {
+    width: 60%;
+}
+
+.product-info-data {
+    width: 50%;
+    padding: 10px;
+}
+
+.product-info-title {
+    margin-bottom: 40px;
+}
+
+.product-info-presence {
+    margin-top: 30px;
+}
+
+.product-info-description {
+    margin: 20px 0 50px 0;
+}
+
+.quantity-arrow {
+    border: solid black 1px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.quantity-input {
+    display: inline-block;
+    height: 27px;
+    width: 25px;
+    padding: 5px;
+    -moz-appearance: textfield;
+}
+
+.product-info-btns {
+    margin-top: 40px;
+}
+
+.product-info-btns .add-to-cart-btn {
+    margin-right: 15px;
+}
+
+.details:nth-of-type(1) {
+    margin-bottom: 30px;
+}
+
+.summary {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.summary-info {
+    margin-bottom: 10px;
+}
+
+.product-info-btns .icon-hover {
+    border: solid black 1px;
+}
+
+.product-info-btns .icon-hover:hover {
+    border: solid transparent 1px;
+}
+
+.shopping-cart {
+    margin-left: 5px;
+}
+
+
+@media screen and (max-width: 1023px) {
+
+    .product-full-info {
+        margin: 100px auto;
+    }
+
+    .product-full-info {
+        flex-direction: column;
+    }
+
+    .product-info {
+        width: 100%;
+    }
+
+    .product-img-container {
+       margin: 0 auto 35px auto;
+    }
+
+    .product-info-data {
+        text-align: center;
+    }
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    .product-info {
+        flex-direction: column;
+    }
+
+    .product-info-data {
+        width: 100%;
+    }
+
+    .details,
+    .product-info-btns,
+    .product-info-description {
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 479px) {
+.product-img-container {
+    width: 200px;
+    height: 200px;
+}
+    }

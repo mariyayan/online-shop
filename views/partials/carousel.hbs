@@ -1,0 +1,26 @@
+<section class='container-wrapper carousel-wrapper'>
+    <div id={{carouselId}} class='carousel slider carousel-slider'>
+        <div class='flex slider-arrows'>
+            <div class='left-btn arrow'><span class='fas fa-chevron-left'></span></div>
+            <div class='right-btn arrow'><span class='fas fa-chevron-right'></span></div>
+        </div>
+
+        {{#if subCategoriesArr}}
+        {{#each productsData}}
+        <div id={{@key}} class='flex slides-wrapper transition-opacity {{#unless @index}}show-element{{/unless}}'>
+            {{#each this}}
+            {{>product-card product=this slide=true}}
+            {{/each}}
+        </div>
+        {{/each}}
+
+        {{else}}
+            <div class='flex slides-wrapper'>
+                {{#each productsData}}
+                    {{>product-card product=this slide=true}}
+                {{/each}}
+            </div>
+        </div>
+</section>
+{{/if}}
+

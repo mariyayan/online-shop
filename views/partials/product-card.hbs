@@ -1,0 +1,22 @@
+<article class='product-card {{#if sales}}transition-opacity {{/if}} {{#if slide}}slide {{/if}} {{#if classes}}all show-element {{product.category}} {{/if}} ' id={{product._id}}>
+    <div class='img-container'>
+        <img src='/{{product.src}}'>
+        <div class='flex product-card-btns'>
+            <a class='icon-hover show-full-info-btn transition-bg-color' href='/product/{{product._id}}'>
+                    <span class='far fa-eye'></span>
+                    <span class='hint transition-visibility'>Quick view</span>
+            </a>
+            <button id='/addToCart/{{product._id}}/1' class='icon-hover add-to-cart-btn clickable transition-bg-color'>
+                <span class='fa fa-shopping-cart'></span>
+                <span class='hint transition-visibility'>Add to cart</span>
+            </button>
+            <button id='/addToWishlist/{{product._id}}/1' class='icon-hover add-to-wishlist-btn clickable transition-bg-color'>
+                <span class='fa fa-heart-o'></span>
+                <span class='hint transition-visibility'>Add to wishlist</span>
+            </button>
+        </div>
+    </div>
+    <p class='product-card-name'>{{product.name}}</p>
+    <p class='pink-text'>'{{product.price}}</p>
+</article>
+

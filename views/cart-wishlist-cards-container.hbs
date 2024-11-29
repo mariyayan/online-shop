@@ -1,0 +1,8 @@
+{{>menu menuData = menuData showUserNavMenu = showUserNavMenu}}
+<section class='wrapper cart-wishlist'>
+    {{#each productsData}}
+    {{>card product=this btnClass=../btnClass route=../route}}
+    {{else}}
+    <p class='empty'>Ничего не добавлено</p>
+    {{/each}}
+</section>
